@@ -1,10 +1,5 @@
 #include <stdexcept>
-
-struct ComplexListNode {
-    int m_value;
-    ComplexListNode* m_pNext;
-    ComplexListNode* m_pSibling;
-};
+#include <structList.h>
 
 
 void cloneListNode(ComplexListNode* head)

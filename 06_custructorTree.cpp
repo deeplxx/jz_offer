@@ -1,10 +1,6 @@
 #include <stdexcept>
+#include "structList.h"
 
-struct BinaryTreeNode {
-    int m_nvalue;
-    BinaryTreeNode* m_pleft;
-    BinaryTreeNode* m_pright;
-};
 
 BinaryTreeNode* custructorTree_core(int* startpreorder, int* endpreorder,
                                     int* startinorder, int* endinorder);
@@ -20,9 +16,9 @@ BinaryTreeNode* custructorTree_core(int* startpreorder, int* endpreorder,
                                     int* startinorder, int* endinorder)
 {
     BinaryTreeNode* root(nullptr);
-    root->m_nvalue = *startpreorder;
-    root->m_pleft = nullptr;
-    root->m_pright = nullptr;
+    root->m_value = *startpreorder;
+    root->m_pLeft = nullptr;
+    root->m_pRight = nullptr;
 
     // 边界情况
     if (startpreorder == endpreorder) {

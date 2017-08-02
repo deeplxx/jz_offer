@@ -19,7 +19,10 @@ SOURCES += \
     20_clock_print.cpp \
     quick_sort.cpp \
     06_custructorTree.cpp \
-    0000_main.cpp
+    0000_main.cpp \
+    27_converttreetodeque.cpp \
+    28_stringpermutation.cpp
 
 HEADERS += \
-    solution.h
+    solution.h \
+    structList.h

@@ -1,10 +1,6 @@
 #include <stdexcept>
+#include <structList.h>
 
-struct BinaryTreeNode {
-    int value;
-    BinaryTreeNode* m_pLeft;
-    BinaryTreeNode* m_pRight;
-};
 
 bool equalTree(BinaryTreeNode* a, BinaryTreeNode* b);
 
@@ -15,7 +11,7 @@ bool is_subTree(BinaryTreeNode* A, BinaryTreeNode* B)
         result = true;
 
     if (A != nullptr && B != nullptr) {
-        if (A->value == B->value)
+        if (A->m_value == B->m_value)
             result = equalTree(A, B);
         if (!result)
             result = is_subTree(A->m_pLeft, B);
@@ -34,7 +30,7 @@ bool equalTree(BinaryTreeNode* a, BinaryTreeNode* b)
         return false;
 
     // 前两个判断语句已经完成了a和b是空的情况，后续是a和b非空的情况
-    if (a->value != b->value)  // 因为要递归，所以函数必须要判断a和b的值是否相等
+    if (a->m_value != b->m_value)  // 因为要递归，所以函数必须要判断a和b的值是否相等
         return false;
     return equalTree(a->m_pLeft, b->m_pLeft) && equalTree(a->m_pRight, b->m_pRight);
 }
