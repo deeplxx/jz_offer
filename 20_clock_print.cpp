@@ -28,7 +28,7 @@ void print_cicle(int** a, int rows, int columns, int start)
 
 }
 
-void clock_sort(int** a, int rows, int columns)
+void clock_print(int** a, int rows, int columns)
 {
     if (a == nullptr || rows <=0 || columns <= 0)
         throw std::runtime_error("invalid input!");
