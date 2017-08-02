@@ -4,8 +4,6 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += \
-    binarytree_traversal.cpp \
-    _main.cpp \
     21_minstack.cpp \
     25_pathintree.cpp \
     26_copycomplexlistnode.cpp \
@@ -19,7 +17,9 @@ SOURCES += \
     14_jo_sort.cpp \
     18_sub_tree.cpp \
     20_clock_print.cpp \
-    quick_sort.cpp
+    quick_sort.cpp \
+    06_custructorTree.cpp \
+    0000_main.cpp
 
 HEADERS += \
     solution.h
