@@ -21,7 +21,8 @@ SOURCES += \
     06_custructorTree.cpp \
     0000_main.cpp \
     27_converttreetodeque.cpp \
-    28_stringpermutation.cpp
+    28_stringpermutation.cpp \
+    31_max_subarray.cpp
 
 HEADERS += \
     solution.h \
