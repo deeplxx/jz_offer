@@ -22,7 +22,8 @@ SOURCES += \
     0000_main.cpp \
     27_converttreetodeque.cpp \
     28_stringpermutation.cpp \
-    31_max_subarray.cpp
+    31_max_subarray.cpp \
+    35_first_number_onlyone.cpp
 
 HEADERS += \
     solution.h \
